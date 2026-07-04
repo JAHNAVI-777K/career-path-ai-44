@@ -158,11 +158,11 @@ function ProfileCard({ profile, refetch }: { profile: any; refetch: () => void }
         </div>
       </div>
       <div className="mt-5 grid gap-4 md:grid-cols-2">
-        <Field label="Full name" value={form.full_name} onChange={(v) => setForm({ ...form, full_name: v })} />
-        <Field label="Branch / Degree" placeholder="e.g. CSE, ECE, MBA" value={form.branch} onChange={(v) => setForm({ ...form, branch: v })} />
-        <Field label="Skills" placeholder="Python, React, SQL…" value={form.skills} onChange={(v) => setForm({ ...form, skills: v })} />
-        <Field label="Interests" placeholder="AI, Web dev, Product…" value={form.interests} onChange={(v) => setForm({ ...form, interests: v })} />
-        <Field label="Career goal" placeholder="e.g. AI Engineer" value={form.career_goal} onChange={(v) => setForm({ ...form, career_goal: v })} className="md:col-span-2" />
+        <Field label="Full name" value={form.full_name} onChange={(v: string) => setForm({ ...form, full_name: v })} />
+        <Field label="Branch / Degree" placeholder="e.g. CSE, ECE, MBA" value={form.branch} onChange={(v: string) => setForm({ ...form, branch: v })} />
+        <Field label="Skills" placeholder="Python, React, SQL…" value={form.skills} onChange={(v: string) => setForm({ ...form, skills: v })} />
+        <Field label="Interests" placeholder="AI, Web dev, Product…" value={form.interests} onChange={(v: string) => setForm({ ...form, interests: v })} />
+        <Field label="Career goal" placeholder="e.g. AI Engineer" value={form.career_goal} onChange={(v: string) => setForm({ ...form, career_goal: v })} className="md:col-span-2" />
       </div>
       <div className="mt-5 flex justify-end">
         <Button onClick={() => m.mutate()} disabled={m.isPending} className="bg-brand-gradient text-white">

@@ -47,10 +47,10 @@ function RoadmapPage() {
 
       <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
         <div className="grid gap-4 md:grid-cols-2">
-          <F label="Branch / Degree" placeholder="CSE, ECE, MBA…" v={form.branch} on={(v) => setForm({ ...form, branch: v })} />
-          <F label="Career goal" placeholder="e.g. AI Engineer" v={form.goal} on={(v) => setForm({ ...form, goal: v })} />
-          <F label="Current skills" placeholder="Python, HTML, SQL" v={form.skills} on={(v) => setForm({ ...form, skills: v })} />
-          <F label="Interests" placeholder="AI, Web dev, Design" v={form.interests} on={(v) => setForm({ ...form, interests: v })} />
+          <F label="Branch / Degree" placeholder="CSE, ECE, MBA…" v={form.branch} on={(v: string) => setForm({ ...form, branch: v })} />
+          <F label="Career goal" placeholder="e.g. AI Engineer" v={form.goal} on={(v: string) => setForm({ ...form, goal: v })} />
+          <F label="Current skills" placeholder="Python, HTML, SQL" v={form.skills} on={(v: string) => setForm({ ...form, skills: v })} />
+          <F label="Interests" placeholder="AI, Web dev, Design" v={form.interests} on={(v: string) => setForm({ ...form, interests: v })} />
         </div>
         <div className="mt-5 flex justify-end">
           <Button onClick={() => m.mutate()} disabled={m.isPending || !form.branch || !form.goal || !form.skills || !form.interests} className="bg-brand-gradient text-white shadow-soft">
