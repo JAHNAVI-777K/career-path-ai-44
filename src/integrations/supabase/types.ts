@@ -14,7 +14,126 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      chat_messages: {
+        Row: {
+          content: string
+          created_at: string
+          id: string
+          role: string
+          user_id: string
+        }
+        Insert: {
+          content: string
+          created_at?: string
+          id?: string
+          role: string
+          user_id: string
+        }
+        Update: {
+          content?: string
+          created_at?: string
+          id?: string
+          role?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          branch: string | null
+          career_goal: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          interests: string | null
+          skills: string | null
+          updated_at: string
+        }
+        Insert: {
+          branch?: string | null
+          career_goal?: string | null
+          created_at?: string
+          full_name?: string | null
+          id: string
+          interests?: string | null
+          skills?: string | null
+          updated_at?: string
+        }
+        Update: {
+          branch?: string | null
+          career_goal?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          interests?: string | null
+          skills?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      resumes: {
+        Row: {
+          analysis: Json | null
+          ats_score: number | null
+          created_at: string
+          id: string
+          resume_text: string
+          target_role: string | null
+          user_id: string
+        }
+        Insert: {
+          analysis?: Json | null
+          ats_score?: number | null
+          created_at?: string
+          id?: string
+          resume_text: string
+          target_role?: string | null
+          user_id: string
+        }
+        Update: {
+          analysis?: Json | null
+          ats_score?: number | null
+          created_at?: string
+          id?: string
+          resume_text?: string
+          target_role?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      roadmaps: {
+        Row: {
+          branch: string | null
+          content: Json
+          created_at: string
+          goal: string | null
+          id: string
+          interests: string | null
+          skills: string | null
+          user_id: string
+        }
+        Insert: {
+          branch?: string | null
+          content: Json
+          created_at?: string
+          goal?: string | null
+          id?: string
+          interests?: string | null
+          skills?: string | null
+          user_id: string
+        }
+        Update: {
+          branch?: string | null
+          content?: Json
+          created_at?: string
+          goal?: string | null
+          id?: string
+          interests?: string | null
+          skills?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
