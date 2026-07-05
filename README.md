@@ -80,10 +80,5 @@ https://career-path-ai-44.lovable.app/
 
 https://github.com/JAHNAVI-777K/career-path-ai-44
 
-## 👩‍💻 Author
 
-**Jahnavi**
 
----
-
-Made with ❤️ for the Hackathon.
