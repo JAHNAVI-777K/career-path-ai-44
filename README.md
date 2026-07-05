@@ -2,6 +2,11 @@
 
 An AI-powered career guidance platform that helps students and professionals discover suitable career paths based on their interests, skills, and goals.
 
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Vite](https://img.shields.io/badge/Vite-8-purple)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 ## 🌟 Problem Statement
 
 Many students struggle to choose the right career due to a lack of personalized guidance. Career Path AI provides AI-driven recommendations and resources to help users make informed career decisions.
