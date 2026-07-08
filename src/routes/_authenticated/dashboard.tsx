@@ -4,7 +4,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { getLatestRoadmap, getLatestResume, getProfile, updateProfile } from "@/lib/ai.functions";
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
-import { Map, FileText, MessageSquare, GraduationCap, TrendingUp, Sparkles, ArrowRight, Loader2, User } from "lucide-react";
+import { Map, FileText, MessageSquare, GraduationCap, TrendingUp, Sparkles, ArrowRight, Loader2, User, CheckCircle2, Circle, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
